@@ -96,11 +96,15 @@ export default function Dashboard({ setSection, setQueueType }) {
       </div>
 
       <div className="quick-actions">
-        <button className="add-lead">
-          onClick={() => (window.location.href = "/add lead.html")}
+        <button 
+          className="add-lead"
+          onClick={() => (window.location.href = "/add-lead.html")}
+        >
           + Add Lead
-          </button>
-        <button className="add-candidate">+ Add Candidate</button>
+        </button>
+        <button className="add-candidate">
+          + Add Candidate
+        </button>
         <button className="view-reports">📊 View Reports</button>
       </div>
     </div>
