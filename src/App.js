@@ -16,7 +16,7 @@ export default function App() {
   const renderContent = () => {
     switch (section) {
       case "dashboard":
-        return <Dashboard />;
+        return <Dashboard setSection={setSection} setQueueType={setQueueType} />;
       case "candidateDetails":
         return <CandidateDetails />;
       case "candidateInfo":
