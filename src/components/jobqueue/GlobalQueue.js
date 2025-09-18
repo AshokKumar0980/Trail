@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import marsData from "src/mars-api.json";
+import marsData from "../mars-api.json";
 
 const GlobalQueue = () => {
   const [jobs, setJobs] = useState([]);
