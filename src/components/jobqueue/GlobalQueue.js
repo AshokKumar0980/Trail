@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import marsData from "../mars-api.json";
+import marsData from "../../mars-api.json";
 
 const GlobalQueue = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
+    // Set the global queue data from imported JSON file
+    setJobs(marsData.mars.jobQueue.globalQueue);
     // Set the global queue data from imported JSON file
     setJobs(marsData.mars.jobQueue.globalQueue);
   }, []);

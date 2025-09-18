@@ -68,7 +68,6 @@ export default function Dashboard({ setSection, setQueueType }) {
         >
           <h3>Total Leads</h3>
           <p style={{ color: "green" }}>120</p>
-          <small style={{ color: "#666", fontSize: "12px" }}>Click to view Global Queue</small>
         </div>
         <div className="kpi-card">
           <h3>WIP Deals</h3>
@@ -97,13 +96,11 @@ export default function Dashboard({ setSection, setQueueType }) {
       </div>
 
       <div className="quick-actions">
-        <button className="add-lead">+ Add Lead</button>
-        <button
-          className="add-candidate"
-          onClick={() => (window.location.href = "/add candidate.html")}
-        >
-          + Add Candidate
-        </button>
+        <button className="add-lead">
+          onClick={() => (window.location.href = "/add lead.html")}
+          + Add Lead
+          </button>
+        <button className="add-candidate">+ Add Candidate</button>
         <button className="view-reports">📊 View Reports</button>
       </div>
     </div>
